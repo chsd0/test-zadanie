@@ -1,0 +1,82 @@
+.node {
+    width: 95%;
+    min-height: 110px;
+    max-height: 110px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 11px 36px;
+    background-color: #e8e8e8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+
+    &.active {
+        background-color: #d4d6ff;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    &__statusCircle {
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+    }
+
+    &__caption {
+        margin-left: 60px;
+        font-size: 20px;
+        width: 120px;
+    }
+
+    &__utilization {
+        margin-left: 146px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__tech {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__techName {
+        width: 70px;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.darkred {
+    background-color: darkred;
+}
+
+.warning {
+    color: #d6b600
+}
+
+.critical {
+    color: red;
+}

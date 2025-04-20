@@ -1,0 +1,24 @@
+.group {
+    width: 90%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #d9d9d9;
+    padding: 0 24px;
+    border-radius: 12px;
+
+    &.active {
+        background-color: #d4d6ff;
+    }
+
+    &__number {
+        width: 77px;
+    }
+
+    &__divider {
+        width: 1px;
+        height: 50px;
+        background-color: #8e8e8e;
+    }
+}

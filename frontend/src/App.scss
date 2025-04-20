@@ -1,0 +1,20 @@
+@font-face {
+  font-family: onest;
+  src: url(./assets/Onest.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: onest;
+  color: black;
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}

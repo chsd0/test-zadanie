@@ -1,0 +1,14 @@
+.column {
+    width: 33.33vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 55px;
+    align-items: center;
+
+    &.scrollable {
+        overflow-y: auto;
+        scroll-behavior: auto;
+        scrollbar-width: thin;
+    }
+}

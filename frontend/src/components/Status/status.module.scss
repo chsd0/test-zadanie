@@ -1,0 +1,59 @@
+.status {
+    &Wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+
+        &.small {
+            width: fit-content;
+            margin: 0;
+            gap: 5px;
+
+            &>.status__indicationCircle {
+                width: 20px;
+                height: 20px;
+            }
+
+            &>.status__caption {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__indicationCircle {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+
+    &__caption {
+        font-size: 24px;
+    }
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.darkred {
+    background-color: darkred;
+}
