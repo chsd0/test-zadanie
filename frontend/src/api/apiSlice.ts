@@ -54,19 +54,15 @@ interface MetricNode {
 }
 
 export const apiSlice = createApi({
-  // Ключ для хранилища Redux
   reducerPath: 'api',
   
-  // Базовый URL для всех запросов
   baseQuery: fetchBaseQuery({ 
     baseUrl: 'http://localhost:23456/api',
   }),
 
   tagTypes: ['Groups', 'MetricsInt'],
   
-  // Определение endpoints (запросы и мутации)
   endpoints: builder => ({
-    // GET запрос 
     getGroups: builder.query<Groups, undefined>({
       query: () => '/groups',
       providesTags: ['Groups']
@@ -79,7 +75,6 @@ export const apiSlice = createApi({
   })
 })
 
-// Экспорт хуков для использования в компонентах
 export const { 
   useGetGroupsQuery, 
   useGetMetricsQuery 
